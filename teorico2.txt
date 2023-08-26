@@ -1,0 +1,19 @@
+• ¿Qué pasa cuando se corre el comando “tsc”?
+    Al correr el comando TSC estamos compilando el archivo de typescript.
+
+• ¿Cómo está organizada una clase?
+    Una clase esta organizada en : Variables internas
+                                   Constructor
+                                   Métodos publicos
+                                   Métodos privados
+
+• ¿Es correcto que un método auxiliar de una clase sea público? ¿Por qué?
+    No es necesario que sean privados, si es preferible que lo sean para poder proteger el buen
+    funcionamiento de la clase.
+
+• Enumerar las características de una interfaz
+    -Funcionan como un “contrato” que debe cumplir una determinada clase
+    -Se especifican los métodos pero sin comportamiento, es decir sin codificar lo que hacen
+    -Las clases que implementen a las interfaces tienen la obligación de implementar todos los 
+    métodos definidos en la interfaz
+    -Son una muy buena práctica ya que ayudan a plantear lo que debería hacer una clase.
