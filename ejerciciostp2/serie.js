@@ -27,12 +27,14 @@ var Serie = /** @class */ (function () {
     };
     Serie.prototype.toString = function () {
         var estado = this.finalizada ? "Finalizada" : "En curso";
-        return "".concat(this.titulo, " (").concat(this.anioEstreno, ") - Temporadas: ").concat(this.temporadas, ", Episodios: ").concat(this.episodios, ", Estado: ").concat(estado);
+        return "".concat(this.titulo, " (").concat(this.anioEstreno, ") , Episodios: ").concat(this.episodios, ", Temporadas: ").concat(this.temporadas, ", Estado: ").concat(estado);
     };
     return Serie;
 }());
-var miSerie = new Serie("Game of Thrones", 2020, 8, 80);
+var miSerie = new Serie("Game of Thrones", 2020, 80, 8);
 console.log(miSerie.toString());
+console.log(miSerie.verEpisodio());
+console.log(miSerie.verEpisodio());
 console.log(miSerie.verEpisodio());
 console.log(miSerie.verEpisodio());
 console.log("Me faltan ver: ".concat(miSerie.episodiosPorVer(), " Episodios"));

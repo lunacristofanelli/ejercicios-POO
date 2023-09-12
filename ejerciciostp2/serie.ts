@@ -37,14 +37,16 @@ class Serie {
 
     toString(): string {
         let estado = this.finalizada ? "Finalizada" : "En curso";
-        return `${this.titulo} (${this.anioEstreno}) - Temporadas: ${this.temporadas}, Episodios: ${this.episodios}, Estado: ${estado}`;
+        return `${this.titulo} (${this.anioEstreno}) , Episodios: ${this.episodios}, Temporadas: ${this.temporadas}, Estado: ${estado}`;
     }
 }
 
-let miSerie = new Serie("Game of Thrones", 2020, 8, 80);
+let miSerie = new Serie("Game of Thrones", 2020, 80, 8);
 
 console.log(miSerie.toString());
 console.log(miSerie.verEpisodio());
 console.log(miSerie.verEpisodio());
+console.log(miSerie.verEpisodio());
+console.log(miSerie.verEpisodio());
 console.log(`Me faltan ver: ${miSerie.episodiosPorVer()} Episodios`);
-console.log(`Esta serie ya la vi? ${miSerie.serieVista()}`);
+console.log(`Esta serie ya la terminé? ${miSerie.serieVista()}`);
