@@ -38,4 +38,5 @@ var miCafetera = new Cafetera();
 miCafetera.vaciarCafetera();
 miCafetera.agregarCafe(600);
 miCafetera.servirTaza(200);
+miCafetera.servirTaza(400);
 console.log(miCafetera);

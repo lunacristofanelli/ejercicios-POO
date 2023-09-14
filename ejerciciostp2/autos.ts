@@ -30,7 +30,7 @@ class Auto {
 
 class RegistroAutomotor {
     private autos: Auto[];
-    private matriz: Matriz; 
+    private matriz: Matriz;
 
     constructor(filas: number, columnas: number) {
         this.autos = [];

@@ -50,7 +50,7 @@ class Cuenta {
     retirar(monto: number): void {
         this.saldo -= monto;
         console.log(`Se retiraron $ ${monto.toFixed(2)} de la cuenta.`);
-}
+    }
 
 }
 

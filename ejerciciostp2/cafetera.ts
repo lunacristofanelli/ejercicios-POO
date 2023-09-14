@@ -1,16 +1,16 @@
 class Cafetera {
     private capacidadMaximaCafe: number;
-    private cantidadActualCafe : number;
+    private cantidadActualCafe: number;
 
-    constructor (capacidadMaximaCafe = 1000 , cantidadActualCafe = 0){
+    constructor(capacidadMaximaCafe = 1000, cantidadActualCafe = 0) {
         this.capacidadMaximaCafe = capacidadMaximaCafe;
         this.cantidadActualCafe = capacidadMaximaCafe;
 
-        if (cantidadActualCafe > capacidadMaximaCafe) 
+        if (cantidadActualCafe > capacidadMaximaCafe)
             cantidadActualCafe = capacidadMaximaCafe;
     }
 
-    public llenarCafetera () : string {
+    public llenarCafetera(): string {
         this.cantidadActualCafe = this.capacidadMaximaCafe;
         return ("Su cafetera está llena");
     }
@@ -24,15 +24,15 @@ class Cafetera {
         }
     }
 
-    public vaciarCafetera () : string {
+    public vaciarCafetera(): string {
         this.cantidadActualCafe = 0;
         return ("Su cafetera está vacía");
     }
 
-    public agregarCafe (cantidad: number) : void {
+    public agregarCafe(cantidad: number): void {
         if (cantidad > 0) {
             this.cantidadActualCafe += cantidad;
-            console.log (`Se agregó ${cantidad} c.c. de café a la cafetera`);
+            console.log(`Se agregó ${cantidad} c.c. de café a la cafetera`);
         } else ("Su cafetera está llena");
     }
 }
@@ -41,4 +41,5 @@ let miCafetera = new Cafetera();
 miCafetera.vaciarCafetera();
 miCafetera.agregarCafe(600);
 miCafetera.servirTaza(200);
-console.log (miCafetera);
+miCafetera.servirTaza(400);
+console.log(miCafetera);
