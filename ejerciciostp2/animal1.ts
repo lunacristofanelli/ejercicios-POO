@@ -26,10 +26,10 @@ class Perro extends Animal {
 
     public constructor(nombre: string, edad: number, raza: string, tamaño: string) {
         super(nombre, edad, raza)
-        this.nombre = "bonito";
-        this.edad = 13;
-        this.raza = "Mestizo";
-        this.tamaño = "pequeño"
+        this.nombre = nombre;
+        this.edad = edad;
+        this.raza = raza;
+        this.tamaño = tamaño;
     }
 
     public buscarObjeto(): string {
@@ -53,10 +53,10 @@ class Gato extends Animal {
 
     public constructor(nombre: string, edad: number, raza: string, pelaje: string) {
         super(nombre, edad, raza)
-        this.nombre = "la micha";
-        this.edad = 3;
-        this.raza = "negra como una pantera";
-        this.pelaje = "corto y brilloso";
+        this.nombre = nombre;
+        this.edad = edad;
+        this.raza = raza;
+        this.pelaje = pelaje;
     }
 
     public jugar_con_juguete(): string {
@@ -81,10 +81,10 @@ class Pajaro extends Animal {
 
     public constructor(nombre: string, edad: number, raza: string, tipo_de_pico: string) {
         super(nombre, edad, raza)
-        this.nombre = "negrito";
-        this.edad = 5;
-        this.raza = "charrua";
-        this.tipo_de_pico = "curvado y negro";
+        this.nombre = nombre;
+        this.edad = edad;
+        this.raza = raza;
+        this.tipo_de_pico = tipo_de_pico;
     }
 
     public volar(): string {

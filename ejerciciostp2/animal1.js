@@ -37,10 +37,10 @@ var Perro = /** @class */ (function (_super) {
     __extends(Perro, _super);
     function Perro(nombre, edad, raza, tamaño) {
         var _this = _super.call(this, nombre, edad, raza) || this;
-        _this.nombre = "bonito";
-        _this.edad = 13;
-        _this.raza = "Mestizo";
-        _this.tamaño = "pequeño";
+        _this.nombre = nombre;
+        _this.edad = edad;
+        _this.raza = raza;
+        _this.tamaño = tamaño;
         return _this;
     }
     Perro.prototype.buscarObjeto = function () {
@@ -60,10 +60,10 @@ var Gato = /** @class */ (function (_super) {
     __extends(Gato, _super);
     function Gato(nombre, edad, raza, pelaje) {
         var _this = _super.call(this, nombre, edad, raza) || this;
-        _this.nombre = "la micha";
-        _this.edad = 3;
-        _this.raza = "negra como una pantera";
-        _this.pelaje = "corto y brilloso";
+        _this.nombre = nombre;
+        _this.edad = edad;
+        _this.raza = raza;
+        _this.pelaje = pelaje;
         return _this;
     }
     Gato.prototype.jugar_con_juguete = function () {
@@ -83,10 +83,10 @@ var Pajaro = /** @class */ (function (_super) {
     __extends(Pajaro, _super);
     function Pajaro(nombre, edad, raza, tipo_de_pico) {
         var _this = _super.call(this, nombre, edad, raza) || this;
-        _this.nombre = "negrito";
-        _this.edad = 5;
-        _this.raza = "charrua";
-        _this.tipo_de_pico = "curvado y negro";
+        _this.nombre = nombre;
+        _this.edad = edad;
+        _this.raza = raza;
+        _this.tipo_de_pico = tipo_de_pico;
         return _this;
     }
     Pajaro.prototype.volar = function () {
