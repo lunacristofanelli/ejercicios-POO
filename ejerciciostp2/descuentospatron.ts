@@ -24,8 +24,9 @@ class EstrategiaDescuentoPlatinum implements EstrategiaDescuento {
 }
 
 class Cliente {
-    constructor(public nombre: string, public tipo: EstrategiaDescuento) { }
-    comprar(producto: Producto) {
+    public constructor(public nombre: string, public tipo: EstrategiaDescuento) { }
+    
+    public comprar(producto: Producto) {
         let precioOriginal = producto.precio;
         let precioConDescuento = this.tipo.aplicarDescuento(producto.precio);
         console.log(
@@ -35,7 +36,7 @@ class Cliente {
 }
 
 class Producto {
-    constructor(public nombre: string, public precio: number) { }
+    public constructor(public nombre: string, public precio: number) { }
 }
 
 let estrategiaRegular = new EstrategiaDescuentoRegular();
